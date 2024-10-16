@@ -1,0 +1,155 @@
+<!--El DOCTYPE sirve para definir que el documento es de tipo HTML5-->
+<!DOCTYPE html>
+
+    <!-- Este html con inicio y fin indica la raiz de una página html.-->
+    <!-- lang="en" es una etiqueta que se utiliza para indicar el idioma principal de la página-->
+    <html lang="es">
+
+    <!--el head es el elemento que contiene la metainformación de la página html. -->
+    <head>
+
+        <!-- El navegador necesita saber que conjunto de caracteres tiene la página html, esto se define con meta. -->
+        <!-- UTF8 cubre casí todos los caracteres y simbolos del mundo, se sugiere en HTML5 siempre usar ese para esperificar el conjunto de caracteres que usa la página html. -->
+        <meta charset="UTF-8">
+
+        <!-- Un diseño web responsivo permite que la página se ajuste a diferentes tamaños de pantalla y ventanas gráficas. -->
+        <!-- Para esta también se usa meta y la etiqueta viewport. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Al usar una carpeta externa para el código en css se vincula por medio de link en el head del documento en html. -->
+        <!-- En la etiqueta href se debe poner el nombre del archivo en css que contiene el estilo de la página. -->
+        <link rel="stylesheet" href="/css/styles.css">
+
+        <!-- Link que permite hacer uso de bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!-- Al usar una carpeta externa para el código en css se vincula por medio de link en el head del documento en html. -->
+        <!-- rel icon es un atributo que especifica una relación entre la página y la imagen y que esa imagen es un favicon para la página web que se esta diseñando. -->
+        <!-- Type es una atributo e image/x-icon es un tipo de archivo para poder subir la imagen. y href es el atributo que da la dirección de donde se ubica la imagen a usar para el favicon.-->
+        <link rel="icon" type="image/x-icon" href="/Imagenes/Favicon MoviAmiga.png">
+        
+        <!-- Este titulo se usa para poner el nombre que va a mostrarse en la pestaña del navegador, es diferente a la ruta(URL)de la página. -->
+        <title>MoviAmiga Bogotá</title>
+
+    </head>
+
+    <!-- el body es el contenedor del cuerpo de la página, contiene todo el contenido visible como los encabezados, párrafos, imágenes, hipervinculos, etc. -->
+    <body>
+
+        <!-- El header es la sesión exclusiva para el encabezado. -->
+        <header>
+            
+            <!-- Las imagenes se definen con "img", "scr" es el atributo que especifica la ruta o URL de la imagen que se va a mostrar. -->
+            <!-- "alt es un atributo que muestra un texto alternativo en caso de que la imagen no carge. "-->
+            <img src="/Imagenes/Logo.png" alt="Logo MoviAmiga Bogotá">
+            
+
+            <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+            <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+            <!-- Tiene un titulo tipo 1 con su respectivo nombre. -->
+            <h1>MoviAmiga Bogotá, siempre a tu alcance</h1>
+            
+            <nav class="navbar justify-content-center bg-body-tertiary" style="background-color: #8CCB3E;">      
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="InicioMoviAmiga.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="Quienes Somos.html">¿Quiénes Somos?</a>
+                            <a class="nav-link active" aria-current="page" href="Tarifas.html">Tarifas</a>
+                            <a class="nav-link active" aria-current="page" href="Contactenos.html">Contáctenos</a>
+                            <a class="nav-link active" aria-current="page" href="InicioSesion.html">Inicio de Sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- El main es la sesión principal del contenido de la página. -->
+        <main>
+
+            <!-- section se encarga de contiener información de diferente tipo-->
+            <section>
+
+                <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                <!-- Tiene un titulo tipo 2 con su respectivo nombre. -->
+                <h2>Sobre el Transporte Público en Bogotá</h2>
+
+                    <div class="text-one">
+
+                        <!-- P es la etiqueda que se usa para párrafos-->
+                        <!-- Entre la etiqueda del párrafo y su contenido se pone la etiqueda de imagen con sus respectivos atributos y clase para que esta imagen acompañe al texto. -->
+                        <p><img src="/Imagenes/Buses Transmilenio.jpg" alt="Buses Transmilenio" class="ImagenUno">El sistema de transporte público en Bogotá es muy variado, tomando en cuenta que es una ciudad muy grande y cuenta con un gran número de habitantes. El transporte público consta de Transmilenio, TransmiCable, Alimentadores, SITP, Complementario y Especial. A continuación te explicamos un poco sobre cada uno de estos:</p>
+                         
+                        <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                        <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                        <!-- Tiene un titulo tipo 3 con su respectivo nombre. -->
+                        <h3>Transmilenio</h3>
+                        <!-- P es la etiqueda que se usa para párrafos-->
+                        <!-- Entre la etiqueda del párrafo y su contenido se pone la etiqueda de imagen con sus respectivos atributos y clase para que esta imagen acompañe al texto. -->
+                        <p><img src="/Imagenes/Bus Transmilenio.jpg" alt="Bus Transmilenio" class="ImagenDos">Transmilenio es uno de los sistemas de transporte masivo en Bogotá y Soacha. Cuenta con 12 troncales actualmente repartidas en la ciudad, para cubrir gran parte de la misma. Tiene una capacidad de transportar un aproximado de 1,2 millones de personas en un día hábil.</p>
+                        
+                        <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                        <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                        <!-- Tiene un titulo tipo 3 con su respectivo nombre. -->
+                        <h3>Alimentadores</h3>
+                        <!-- P es la etiqueda que se usa para párrafos-->
+                        <!-- Entre la etiqueda del párrafo y su contenido se pone la etiqueda de imagen con sus respectivos atributos y clase para que esta imagen acompañe al texto. -->
+                        <p><img src="/Imagenes/Alimentador.jpg" alt="Bus Alimentador" class="ImagenTres">Los alimentadores hacen parte del transmilenio como un sistema alterno. Este tiene su salida de buses desde las cabeceras (Portales) o estaciones intermedias, con el fin de las zonas cercanas y facilitar a las personas que viven en la zona, llegar a ellos sin recorrer grandes distancias y desde ahí puedan acceder a otros buses que hacen parte del sistema de transmilenio. Cuenta con 106 rutas repartidas en las zonas cercanas a las principales zonas de salida de buses de transmilenio y un aproximado de 948 buses para cubrir este servicio.</p>
+        
+                        <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                        <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                        <!-- Tiene un titulo tipo 3 con su respectivo nombre. -->
+                        <h3>TransmiCable</h3>
+                        <!-- P es la etiqueda que se usa para párrafos-->
+                        <!-- Entre la etiqueda del párrafo y su contenido se pone la etiqueda de imagen con sus respectivos atributos y clase para que esta imagen acompañe al texto. -->
+                        <p><img src="/Imagenes/Transmicable.jpg" alt="TransmiCable Foto" class="ImagenCuatro">TransmiCable es una troncal alimentadora de transmilenio, pero esta busca beneficiar a las personas de la localidad de Ciudad Bolívar. Está conectada desde el Portal el Tunal hasta los sectores Los Miradores y El Paraíso. Este beneficia aproximadamente a 700.000 personas de este sector, mejorando el tiempo de recorrido para desplazarse hasta el Portal El Tunal. Adicionalmente, es una troncal alimentadora 100% eléctrica, aportando al medio ambiente.</p>
+        
+                        <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                        <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                        <!-- Tiene un titulo tipo 3 con su respectivo nombre. -->
+                        <h3>SITP</h3>
+                        <!-- P es la etiqueda que se usa para párrafos-->
+                        <!-- Entre la etiqueda del párrafo y su contenido se pone la etiqueda de imagen con sus respectivos atributos y clase para que esta imagen acompañe al texto. -->
+                        <p><img src="/Imagenes/SITP.jpg" alt="SITP Foto" class="ImagenCinco">El Sistema Integrado de Transporte Público (SITP) se creó con el fin de modernizar el sistema de transporte público en Bogotá, repartiendo por zonas la ciudad y que toda esta pueda contar con buses que permitan el desplazamiento a diferentes zonas de la ciudad recorriendo una gran distancia entre puntos. Esta cuenta con 12 troncales y aproximadamente 6.867 paraderos en toda la ciudad y 136 estaciones troncales, desde las cuales parten las diferentes rutas según su asignación. Este sistema transporta a más de 55'000.000 personas al día.</p>
+        
+                        <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                        <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                        <!-- Tiene un titulo tipo 3 con su respectivo nombre. -->
+                        <h3>Complementario</h3>
+                        <!-- P es la etiqueda que se usa para párrafos-->
+                        <!-- Entre la etiqueda del párrafo y su contenido se pone la etiqueda de imagen con sus respectivos atributos y clase para que esta imagen acompañe al texto. -->
+                        <p><img src="/Imagenes/Complementario.jpg" alt="Complementario Foto" class="ImagenSeis">El Complementario se conecta con las troncales de Transmilenio. Su recorrido es de tipo circular, partiendo desde una de las estaciones de transmilenio, cubre los barrios cercanos a la estación y regresa a ella. Se caracteriza por sus buses de color naranja y el pago se suele realizar al interior de los buses.</p>
+        
+                        <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                        <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                        <!-- Tiene un titulo tipo 3 con su respectivo nombre. -->
+                        <h3>Especial</h3>
+                        <!-- P es la etiqueda que se usa para párrafos-->
+                        <!-- Entre la etiqueda del párrafo y su contenido se pone la etiqueda de imagen con sus respectivos atributos y clase para que esta imagen acompañe al texto. -->
+                        <p><img src="/Imagenes/Especial.jpg" alt="Especial Foto" class="ImagenSiete">El servicio Especial se conecta con las troncales de Transmilenio, pero esta está destinada a cubrir las zonas periféricas de la ciudad, donde en la actualidad aún no se cuenta con sistema de transporte público. Este se caracteriza por el color vino tinto. El pago se realiza también al interior de los vehículos por medio de la tarjeta TuLlave.</p>
+                    </div>
+
+            </section>
+
+        </main>
+
+        <!-- El footer contiene el pie de página. -->
+        <footer>
+
+            <!-- la p es una etiqueta que se usa para definir párrafos. -->
+            <!-- Contiene los derechos de autor. -->
+            <p>&copy; 2024 MoviAmiga Bogotá</p>
+        </footer>
+
+        <!-- Link que enruta para hacer uso de bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
+

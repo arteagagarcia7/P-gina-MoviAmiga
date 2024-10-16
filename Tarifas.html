@@ -1,0 +1,151 @@
+<!--El DOCTYPE sirve para definir que el documento es de tipo HTML5-->
+<!DOCTYPE html>
+
+    <!-- Este html con inicio y fin indica la raiz de una página html.-->
+    <!-- lang="en" es una etiqueta que se utiliza para indicar el idioma principal de la página-->
+    <html lang="es">
+
+    <!--el head es el elemento que contiene la metainformación de la página html. -->
+    <head>
+
+        <!-- El navegador necesita saber que conjunto de caracteres tiene la página html, esto se define con meta. -->
+        <!-- UTF8 cubre casí todos los caracteres y simbolos del mundo, se sugiere en HTML5 siempre usar ese para esperificar el conjunto de caracteres que usa la página html. -->
+        <meta charset="UTF-8">
+
+        <!-- Un diseño web responsivo permite que la página se ajuste a diferentes tamaños de pantalla y ventanas gráficas. -->
+        <!-- Para esta también se usa meta y la etiqueta viewport. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Al usar una carpeta externa para el código en css se vincula por medio de link en el head del documento en html. -->
+        <!-- En la etiqueta href se debe poner el nombre del archivo en css que contiene el estilo de la página. -->
+        <link rel="stylesheet" href="/css/styles.css">
+
+        <!-- Link que permite hacer uso de bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+        <!-- Al usar una carpeta externa para el código en css se vincula por medio de link en el head del documento en html. -->
+        <!-- rel icon es un atributo que especifica una relación entre la página y la imagen y que esa imagen es un favicon para la página web que se esta diseñando. -->
+        <!-- Type es una atributo e image/x-icon es un tipo de archivo para poder subir la imagen. y href es el atributo que da la dirección de donde se ubica la imagen a usar para el favicon.-->
+        <link rel="icon" type="image/x-icon" href="/Imagenes/Favicon MoviAmiga.png">
+        
+        <!-- Este titulo se usa para poner el nombre que va a mostrarse en la pestaña del navegador, es diferente a la ruta(URL)de la página. -->
+        <title>Tarifas</title>
+
+    </head>
+
+    <!-- el body es el contenedor del cuerpo de la página, contiene todo el contenido visible como los encabezados, párrafos, imágenes, hipervinculos, etc. -->
+    <body>
+
+        <!-- El header es la sesión exclusiva para el encabezado. -->
+        <header>
+            <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+            <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+            <!--De deja el titulo comentado porque ya el logo tiene el nombre-->
+            <!--<h1>Tarifas</h1>-->
+            
+            <!-- Las imagenes se definen con "img", "scr" es el atributo que especifica la ruta o URL de la imagen que se va a mostrar. -->
+            <!-- "alt es un atributo que muestra un texto alternativo en caso de que la imagen no carge. "Width" y "height" son losa tributos que indican el ancho y alto de la imagen en pixeles."-->
+            <img src="/Imagenes/Logo.png" alt="Logo MoviAmiga Bogotá">
+
+            <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+            <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+            <!-- Tiene un titulo tipo 1 con su respectivo nombre. -->
+            <h1>MoviAmiga Bogotá, siempre a tu alcance</h1>
+
+            <nav class="navbar justify-content-center bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="Tarifas.html">Tarifas</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="InicioMoviAmiga.html">Inicio</a>
+                      <a class="nav-link active" aria-current="page" href="Quienes Somos.html">¿Quiénes Somos?</a>
+                      <a class="nav-link active" aria-current="page" href="Contactenos.html">Contáctenos</a>
+                      <a class="nav-link active" aria-current="page" href="InicioSesion.html">Inicio de Sesión</a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+            
+
+        </header>
+
+        <!-- El main es la sesión principal del contenido de la página. -->
+        <main>
+
+            <!-- Es un elemento generalmente que tiene contenido, en este caso tiene una clase llamada "content". -->
+            <div class="content">
+                <!-- Tiene un subtitulo tipo 2 con su respectivo nombre. -->
+                <h1>Tarifas del Transporte Público en Bogotá</h1>
+
+            </div>
+
+            
+
+
+            <!-- section se encarga de contiener información de diferente tipo-->
+            <section class="Section-Tarifas">
+
+                <!-- la p es una etiqueta que se usa para definir párrafos. -->
+                <p>Pese a que el sistema de transporte público en Bogotá tiene diferentes buses y modalidades, las tarifas con las que cuenta este no son tan variadas. Estas son:</p>
+
+                <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                <!-- Tiene un titulo tipo 2 con su respectivo nombre. -->
+                <h2>Transmilenio, Alimentadores y TransmiCable</h2>
+                <!-- la p es una etiqueta que se usa para definir párrafos. -->
+                <p>Estos tienen un costo a cualquier hora del día de $2.950. Este valor se valida en los torniquetes y se hace efectivo el pago por medio de la tarjeta TuLlave.</p>
+
+                <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                <!-- Tiene un titulo tipo 2 con su respectivo nombre. -->
+                <h2>SITP, Complementaria y Especial</h2>
+                <!-- la p es una etiqueta que se usa para definir párrafos. -->
+                <p>Estos tienen un costo a cualquier hora del día de $2.950. Este valor se valida en los torniquetes y se hace efectivo el pago por medio de la tarjeta TuLlave.</p>
+
+                <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                <!-- Tiene un titulo tipo 2 con su respectivo nombre. -->
+                <h2>Tarjeta TuLlave</h2>
+                <!-- la p es una etiqueta que se usa para definir párrafos. -->
+                <p>Las tarjetas TuLlave se pueden adquirir en los puntos de recarga principales como los portales del transmilenio o puntos especializados. Esta tiene un valor de $8.000.</p>
+
+                <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                <!-- Tiene un titulo tipo 2 con su respectivo nombre. -->
+                <h2>Transbordos</h2>
+                <!-- la p es una etiqueta que se usa para definir párrafos. -->
+                <p>Para realizar un transbordo de un medio de transporte, como los nombrados anteriormente, a otro no tiene costo durante un lapso de aproximadamente de 110 minutos. Después de este lapso de tiempo se cobrará nuevamente el pasaje completo en caso de que quiera realizar un transbordo. Una de las condiciones para realizar el transbordo es que puede realizar un máximo de 2 transbordos sin costo dentro del lapso de tiempo ya mencionado y deben ser del mismo tipo, es decir, transbordos entre troncales o entre zonales. No aplica troncal-zonal-troncal.</p>
+
+                <!-- El h contiene los titulos y subtitulos que contendrá la página. -->
+                <!-- El h1 es el encabezado más importante y de ahí van bajando a 2, 3, hasta el 6. -->
+                <!-- Tiene un titulo tipo 2 con su respectivo nombre. -->
+                <h2>Tarifa preferencial</h2>
+                <!-- la p es una etiqueta que se usa para definir párrafos. -->
+                <p>El sistema de transporte público cuenta con una tarifa especial para las personas que cuenten con una discapacidad, cuenten con una tarjeta especial del SISBEN o sean mayores de 62 años. Para las personas mayores de 62 años, el costo del pasaje será de $2.500; sin embargo, tienen un máximo de 30 viajes por mes. Las personas con discapacidad cuentan con un subsidio de $29.500 que serán abonados a TuLlave Especial; sin embargo, el valor del pasaje sigue siendo de $2.950. Para las personas que cuentan con una tarjeta especial del SISBEN, el valor del pasaje es de $2.500.</p>
+
+            </section>
+
+            <!-- Las imagenes se definen con "img", "scr" es el atributo que especifica la ruta o URL de la imagen que se va a mostrar. -->
+            <!-- "alt es un atributo que muestra un texto alternativo en caso de que la imagen no carge. "class" es la clase en la que yo puedo ubicar en csss y darle un estilo propio a la imágen. -->
+            <img src="/Imagenes/Tarjeta TuLlave.jpg" alt="Tarjeta TuLlave" class="ImagenOcho">
+
+        </main>
+
+        <!-- El footer contiene el pie de página. -->
+        <footer>
+
+            <!-- la p es una etiqueta que se usa para definir párrafos. -->
+            <!-- Contiene los derechos de autor. -->
+            <p>&copy; 2024 MoviAmiga Bogotá</p>
+        </footer>
+
+        <!-- Link que enruta para hacer uso de bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
